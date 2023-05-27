@@ -1,0 +1,165 @@
+@use 'sass:math';
+//<МИКСИНЫ>======================================================
+@import 'base/mixins';
+//<МИКСИНЫ>======================================================
+
+//<ШРИФТЫ>=======================================================
+//<Подключаем шрифты>============================================
+//&display=swap&subset=cyrillic-ext
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap&subset=cyrillic-ext');
+
+@import 'base/fonts';
+//</Подключаем шрифты>===========================================
+
+//<Шрифт по умолчанию>===========================================
+$fontFamily: 'Montserrat';
+$fontSize: 16px;
+//</Шрифт по умолчанию>==========================================
+
+//</ШРИФТЫ>======================================================
+
+//<ПЕРЕМЕННЫЕ>===================================================
+$mainColor: #efefef;
+
+@import 'variables';
+//===============================================================
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1300; // прибавить  padding * 2
+$containerPadding: 10;
+$headerHeight: 75;
+
+$pc: $maxWidthContainer + px;
+$tablet: 991.98 + px;
+$mobile: 767.98 + px;
+$mobileSmall: 479.98 + px;
+
+//</ПЕРЕМЕННЫЕ>==================================================
+
+//<ОБНУЛЕНИЕ>===================================
+@import 'base/null';
+//</ОБНУЛЕНИЕ>==================================
+
+//<ОБОЛОЧКА>=====================================================
+
+html {
+	scroll-behavior: smooth;
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	// overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	background: radial-gradient(
+		93.74% 109.67% at 50% -2%,
+		#4b4d53 0%,
+		#1c1c1f 100%
+	);
+}
+
+.lazy-image {
+	position: relative;
+	z-index: 1;
+	// padding: 0 0 90% 0;
+	background: url('@img/icons/loading.gif') center / 50px no-repeat;
+}
+
+//</ОБОЛОЧКА>===================================================
+
+//<ОСНОВНАЯ СЕТКА>==============================================
+[class*='__container'] {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 $containerPadding + px;
+}
+
+//</ОСНОВНАЯ СЕТКА>=============================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>===============
+@import 'header';
+//===========MAIN===============================================
+@import './section/hero';
+@import './section/benefits';
+@import './section/services';
+@import './section/about';
+@import './section/departments';
+@import './section/callback';
+@import './section/reviews';
+@import './section/works';
+@import './section/policy';
+@import './section/faq';
+@import './section/contacts';
+@import './section/reviews-more';
+@import './section/catalog';
+@import './section/object-cart';
+//===========MAIN===============================================
+@import 'footer';
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
+
+// ПОДКЛЮЧЕНИЕ БЭМ БЛОКОВ
+// @import './parts/...';
+
+//<ОСНОВНОЙ БЛОК>===============================================
+
+@import 'base';
+@import 'global';
+
+.page {
+	flex: 1 1 auto;
+	position: relative;
+	background: radial-gradient(
+		93.74% 109.67% at 50% -2%,
+		#4b4d53 0%,
+		#1c1c1f 100%
+	);
+
+	// .page__title
+
+	&__title {
+		position: relative;
+		display: inline-flex;
+		margin-bottom: 30px;
+		@include adaptiveValue('padding-top', 120, 100, 1);
+		font-weight: 700;
+		@include adaptiveValue('font-size', 55, 25, 1);
+		color: #ffffff;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: var(--color-accent);
+		}
+	}
+}
+//====================================================================
+
+//Global=====================================================
+._show {
+	display: block;
+}
+
+.header_hidden {
+	transform: translateY(-100%);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0 0 0 0);
+}
+//====================================================================

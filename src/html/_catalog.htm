@@ -1,0 +1,261 @@
+<section class="catalog">
+	<div class="catalog__container">
+		<div class="catalog__sidebar">
+			<form class="catalog__filter-bar filter-bar">
+				<div class="filter-bar__head">
+					<span class="filter-bar__label">Фильтр</span>
+					<button type="button" class="filter-bar__reset">Сбросить</button>
+				</div>
+				<ul class="filter-bar__list">
+					<li class="filter-bar__item show">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__title">Цена ₽</h3>
+							<svg class="arrow icon">
+								<use xlink:href="@img/sprite.svg#go-to-top"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-range">
+							<div class="filter-range__slider">
+								<div id="range"></div>
+							</div>
+							<div class="filter-range__values">
+								<div class="filter-range__field">
+									<span id="min"></span>
+									<span>₽</span>
+								</div>
+								<div class="filter-range__field">
+									<span id="max"></span>
+									<span>₽</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="filter-bar__item show">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__title">Площадь ₽</h3>
+							<svg class="arrow icon">
+								<use xlink:href="@img/sprite.svg#go-to-top"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-square">
+							<div class="filter-square__item">
+								<label for="house" class="filter-square__label">Площадь дома</label>
+								<input type="text" name="house" class="filter-square__input" data-house-min placeholder="от">
+								<input type="text" name="house" class="filter-square__input" data-house-max placeholder="до">
+							</div>
+							<div class="filter-square__item">
+								<label class="filter-square__label">Площадь участка</label>
+								<input type="text" name="plot" class="filter-square__input" data-plot-min placeholder="от">
+								<input type="text" name="plot" class="filter-square__input" data-plot-max placeholder="до">
+							</div>
+						</div>
+					</li>
+					<li class="filter-bar__item">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__title">Вид объекта...</h3>
+							<svg class="arrow icon">
+								<use xlink:href="@img/sprite.svg#go-to-top"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-details">
+							<label class="checkbox">
+								<input name="objectType" class="filter-details__input" type="checkbox" value="Дом" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Дом</div>
+							</label>
+							<label class="checkbox">
+								<input name="objectType" class="filter-details__input" type="checkbox" value="Дача" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Дача</div>
+							</label>
+							<label class="checkbox">
+								<input name="objectType" class="filter-details__input" type="checkbox" value="Коттедж" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Коттедж</div>
+							</label>
+							<label class="checkbox">
+								<input name="objectType" class="filter-details__input" type="checkbox" value="Таунхаус" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Таунхаус</div>
+							</label>
+						</div>
+					</li>
+					<li class="filter-bar__item">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__title">Ремонт...</h3>
+							<svg class="arrow icon">
+								<use xlink:href="@img/sprite.svg#go-to-top"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-details">
+							<label class="checkbox">
+								<input name="repairType" class="filter-details__input" type="checkbox" value="Требуется" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Требуется</div>
+							</label>
+							<label class="checkbox">
+								<input name="repairType" class="filter-details__input" type="checkbox" value="Косметический" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Косметический</div>
+							</label>
+							<label class="checkbox">
+								<input name="repairType" class="filter-details__input" type="checkbox" value="Евро" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Евро</div>
+							</label>
+							<label class="checkbox">
+								<input name="repairType" class="filter-details__input" type="checkbox" value="Дирзайнерский" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Дирзайнерский</div>
+							</label>
+						</div>
+					</li>
+					<li class="filter-bar__item">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__title">Категория земель...</h3>
+							<svg class="arrow icon">
+								<use xlink:href="@img/sprite.svg#go-to-top"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-details">
+							<label class="checkbox">
+								<input name="landСategory" class="filter-details__input" type="checkbox"
+									value="Индивидуальное жилищное строительство" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Индивидуальное
+									жилищное строительство</div>
+							</label>
+							<label class="checkbox">
+								<input name="landСategory" class="filter-details__input" type="checkbox"
+									value="Садовое некоммерческое товарищество" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Садовое некоммерческое
+									товарищество</div>
+							</label>
+							<label class="checkbox">
+								<input name="landСategory" class="filter-details__input" type="checkbox"
+									value="Дачное некоммерческое партнерство" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Дачное некоммерческое
+									партнерство</div>
+							</label>
+							<label class="checkbox">
+								<input name="landСategory" class="filter-details__input" type="checkbox" value="Фермерское хозяйство" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Фермерское хозяйство</div>
+							</label>
+
+						</div>
+					</li>
+
+
+					<!-- <li class="filter-bar__item">
+						<div class="filter-bar__heading">
+							<h3 class="filter-bar__watch-all">Смотреть все фильтры</h3>
+							<svg class="filter icon">
+								<use xlink:href="@img/sprite.svg#filter"></use>
+							</svg>
+						</div>
+						<div class="filter-bar__block filter-details">
+							<label class="checkbox">
+								<input class="filter-details__input" type="checkbox" value="Индивидуальное
+								жилищное строительство" />
+								<div class="checkbox__checkmark">
+									<svg class="icon">
+										<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+									</svg>
+								</div>
+								<div class="checkbox__body">Индивидуальное
+									жилищное строительство</div>
+							</label>
+
+
+
+						</div>
+					</li> -->
+				</ul>
+				<button type="button" class="filter-bar__button">Показать <span>138</span> объявлений</b>
+			</form>
+		</div>
+
+		<div class="catalog__content">
+			<div class="catalog__top-row">
+				<div class="sort-dropdown">
+					<div class="sort-dropdown__button">
+						<span class="sort-dropdown__value">Сортировать по ...</span>
+						<svg class="sort-dropdown__icon icon">
+							<use xlink:href="@img/sprite.svg#v"></use>
+						</svg>
+					</div>
+					<ul class="sort-dropdown__dropdown">
+						<li id="sort-price-max" class="sort-dropdown__item">Цене (возрастанию)</li>
+						<li id="sort-price-min" class="sort-dropdown__item">Цене (убиванию)</li>
+						<li id="sort-plot-max" class="sort-dropdown__item">Площади (возрастанию)</li>
+						<li id="sort-plot-min" class="sort-dropdown__item">Площади (убиванию)</li>
+					</ul>
+				</div>
+				<span class="catalog__count"><span>132</span> объявлений</span>
+			</div>
+			<ul class="catalog__list">
+
+			</ul>
+
+
+			<div class="catalog__pagination catalog-pagination">
+				<span class="catalog-pagination__prev">
+					< </span>
+						<ul class="catalog-pagination__list"></ul>
+						<span class="catalog-pagination__more">....</span>
+						<span class="catalog-pagination__next">></span>
+			</div>
+		</div>
+	</div>
+</section>

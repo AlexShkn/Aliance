@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>О компании</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+				<h1 class="page__title">О компании</h1>
+			</div>
+			<div class="bread-crumbs">
+				<div class="bread-crumbs__container">
+					<a href="index.html" class="bread-crumbs__link">
+						<svg class="icon">
+							<use xlink:href="@img/sprite.svg#home"></use>
+						</svg>
+						Главная</a>
+					<span class="bread-crumbs__link">О компании</span>
+				</div>
+			</div>
+			<div class="page__container" style="margin-bottom: 60px">
+				<div class="page-image">
+					<picture>
+						<source srcset="@img/about/about.jpg" media="(min-width: 768px)">
+						<img src="@img/about/about-478.jpg" alt="">
+					</picture>
+				</div>
+
+			</div>
+			<!-- About -->
+			@@include('html/_about.htm',{})
+			<!-- Departments -->
+			@@include('html/_departments.htm',{})
+			<!-- Benefits -->
+			@@include('html/_benefits.htm',{})
+			<!-- Reviews -->
+			@@include('html/_reviews.htm',{})
+			<!-- Works -->
+			@@include('html/_works.htm',{})
+			<!-- Callback -->
+			@@include('html/_callback.htm',{})
+		</main>
+		<!-- Footer -->
+		@@include('html/_footer.htm',{})
+
+		<!-- ==================================================================== -->
+		<!-- @@include('html/parts/modals.htm',{}) -->
+		<!-- ==================================================================== -->
+
+		@@include('html/default-parts/back-to-top-btn.htm',{})
+		@@include('html/default-parts/preloader.htm',{})
+
+		<!-- ==================================================================== -->
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

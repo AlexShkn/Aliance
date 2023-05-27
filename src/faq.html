@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Вопрос ответ</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+				<h1 class="page__title">Вопрос ответ</h1>
+			</div>
+			<div class="bread-crumbs">
+				<div class="bread-crumbs__container">
+					<a href="index.html" class="bread-crumbs__link">
+						<svg class="icon">
+							<use xlink:href="@img/sprite.svg#home"></use>
+						</svg>
+						Главная</a>
+					<span class="bread-crumbs__link">Вопрос ответ</span>
+				</div>
+			</div>
+
+			<!-- FAQ -->
+			@@include('html/_faq.htm',{})
+			<!-- Callback -->
+			@@include('html/_callback.htm',{})
+		</main>
+		<!-- Footer -->
+		@@include('html/_footer.htm',{})
+
+		<!-- ==================================================================== -->
+		<!-- @@include('html/parts/modals.htm',{}) -->
+		<!-- ==================================================================== -->
+
+		@@include('html/default-parts/back-to-top-btn.htm',{})
+		@@include('html/default-parts/preloader.htm',{})
+
+		<!-- ==================================================================== -->
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

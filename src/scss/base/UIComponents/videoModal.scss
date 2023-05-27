@@ -1,0 +1,65 @@
+.video-section {
+	background-color: #5656;
+	height: 30em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.yt-modal-btn {
+	background-color: #ff3232;
+	border: none;
+	display: block;
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	font-size: 1.5em;
+	color: #fff;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	&:hover {
+		background-color: #fff;
+		color: #ff3232;
+	}
+}
+.placeholder-content {
+	color: #fff;
+	padding: 2.5em;
+}
+.modal-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100vw;
+	height: 100vh;
+	backdrop-filter: blur(5px);
+	overflow-y: scroll;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	display: none;
+	opacity: 0;
+}
+
+.modal {
+	width: 70%;
+	position: relative;
+	padding-top: 56.25%;
+	margin: 6em 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: none;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (min-width: 900px) {
+	.modal {
+		padding-top: 0;
+		width: 809px;
+		height: 505px;
+	}
+}

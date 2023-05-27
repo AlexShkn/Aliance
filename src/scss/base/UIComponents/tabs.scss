@@ -1,0 +1,43 @@
+// Snippet: tabs
+
+.tabs {
+	padding-bottom: 200px;
+	// .tabs__navigation
+	&__navigation {
+		display: flex;
+	}
+	// .tabs__title
+	&__title {
+		border: 1px solid #eee;
+		padding: 10px 15px;
+		border-radius: 5px;
+		&._tab-active {
+			border: 1px solid #000;
+		}
+	}
+	// .tabs__content
+	&__content {
+		border: 1px solid #eee;
+		padding: 10px 15px;
+	}
+	// .tabs__body
+	&__body {
+		display: none;
+		opacity: 0;
+		animation: showContent 1.2s forwards;
+		overflow: hidden;
+
+		&.tabs__content_active {
+			display: flex;
+		}
+	}
+}
+
+@keyframes showContent {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,21 @@
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ccc;
+	width: 50%;
+	height: 200px;
+	font-size: 40px;
+	transform: translateX(400%);
+	transition: all 0.3s ease 0s;
+	&:nth-child(even) {
+		transform: translateX(-400%);
+	}
+}
+
+._section-show {
+	transform: translateX(0);
+	&:nth-child(even) {
+		transform: translateX(0);
+	}
+}

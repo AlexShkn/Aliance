@@ -1,0 +1,74 @@
+.fade {
+	animation-name: fade;
+	animation-duration: 0.3s;
+}
+
+.fade-in {
+	animation: fadeIn ease 3s;
+}
+.fade-left {
+	animation: fadeLeft 500ms ease-in-out forwards;
+}
+.fade-up {
+	animation: fadeUp 600ms ease-in-out forwards;
+}
+.zoom-in {
+	animation: zoomIn 700ms ease-in-out forwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+// @keyframes fadeLeft {
+// 	0% {
+// 		opacity: 0;
+// 		transform: translateX(120px);
+// 	}
+
+// 	100% {
+// 		opacity: 1;
+// 		transform: translateX(0);
+// 	}
+// }
+
+@keyframes fadeUp {
+	0% {
+		opacity: 0;
+		transform: translateY(120px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes zoomIn {
+	0% {
+		opacity: 1;
+		transform: scale(0.3);
+	}
+	10% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(1);
+	}
+}

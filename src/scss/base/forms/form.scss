@@ -1,0 +1,55 @@
+:root {
+	--success-color: #23cc71;
+	--error-color: #e74c3c;
+}
+
+.form {
+}
+
+.form-control {
+	// margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.form-control label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	display: inline-flex;
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: var(--color-accent);
+}
+.form-control textarea:focus {
+	outline: 0;
+	border-color: var(--color-accent);
+}
+
+.form-control.success input {
+	border: 1px solid var(--success-color);
+}
+
+.form-control.error input {
+	border: 1px solid var(--error-color);
+}
+
+.form-control small {
+	color: var(--error-color);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}

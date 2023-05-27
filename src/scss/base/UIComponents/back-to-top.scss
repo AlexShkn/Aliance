@@ -1,0 +1,107 @@
+#back-to-top-btn {
+	display: none;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid var(--color-accent);
+	border-radius: 50%;
+	transition: all 0.3s ease 0s;
+	z-index: 10;
+	svg {
+		transition: all 0.3s ease 0s;
+		width: 20px;
+		height: 20px;
+		fill: var(--color-accent);
+	}
+	@media (any-hover: hover) {
+		&:hover,
+		&:focus {
+			background-color: #333;
+			color: #fff;
+			border-color: #333;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+	@media (max-width: $tablet) {
+		font-size: 22px;
+		width: 40px;
+		height: 40px;
+		right: 15px;
+	}
+	@media (max-width: $mobile) {
+		font-size: 18px;
+		width: 32px;
+		height: 32px;
+		right: 6px;
+		border-width: 2px;
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+}
+
+/* Animations */
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+/* zoomIn */
+/* @keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+/* fadeInUp */
+@keyframes btnEntrance {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.btnExit {
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name: btnExit;
+}
+/* zoomOut */
+/* @keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+} */
+
+/* fadeOutDown */
+@keyframes btnExit {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+}

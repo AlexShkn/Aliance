@@ -1,0 +1,18 @@
+.faq {
+	// .faq__container
+
+	&__container {
+	}
+
+	// .faq__image
+
+	&__image {
+		@include adaptiveValue('margin-bottom', 70, 28, 1);
+	}
+
+	// .faq__accordion
+
+	&__accordion {
+		@include adaptiveValue('margin-bottom', 70, 28, 1);
+	}
+}

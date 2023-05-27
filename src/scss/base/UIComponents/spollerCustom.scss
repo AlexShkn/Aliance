@@ -1,0 +1,128 @@
+.accordion {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	@media (max-width: $tablet) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	// .accordion__column
+
+	&__column {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	// .accordion__item
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		background: #ffffff;
+		border: 1px solid #e8e8e8;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+
+	// .accordion__triger
+
+	&__trigger {
+		position: relative;
+		display: block;
+		text-align: left;
+		width: 100%;
+		padding: 25px;
+		padding-right: 50px;
+		outline: none;
+		transition: all 0.3s ease 0s;
+		&:hover,
+		&:focus {
+			cursor: pointer;
+			color: #141414;
+		}
+
+		svg {
+			position: absolute;
+			right: 25px;
+			top: calc(50% - 10px);
+			width: 20px;
+			height: 20px;
+			fill: #141414;
+			transition: all 0.3s ease 0s;
+		}
+
+		@media (max-width: $mobile) {
+			padding: 20px;
+			padding-right: 50px;
+		}
+	}
+
+	// .accordion__title
+
+	&__title {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: math.div(16, 16);
+		color: #141414;
+		@media (max-width: $tablet) {
+			font-size: 14px;
+		}
+
+		@media (max-width: $mobile) {
+			font-size: 12px;
+		}
+	}
+
+	// .accordion__content
+
+	&__content {
+		opacity: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: opacity 200ms linear, max-height 200ms linear;
+		will-change: opacity, max-height;
+		padding: 0 25px;
+
+		p {
+			@include adaptiveValue('font-size', 16, 10, 1);
+			font-weight: 500;
+			line-height: 120%;
+			color: #6a6a6a;
+		}
+	}
+}
+
+.accordion__trigger[aria-expanded='true'] {
+	span {
+		color: var(--color-accent);
+	}
+
+	+ .accordion__content {
+		opacity: 1;
+		max-height: 150px;
+		overflow-y: auto;
+		transition: all 200ms linear;
+		will-change: opacity, max-height;
+
+		&::-webkit-scrollbar {
+			width: 7px;
+		}
+		&::-webkit-scrollbar-track {
+			background: #e0e0e0;
+			border-radius: 25px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: #6a6a6a;
+			border-radius: 5px;
+		}
+	}
+
+	svg {
+		fill: var(--color-accent);
+		transform: rotate(-180deg);
+	}
+}

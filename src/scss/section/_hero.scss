@@ -1,0 +1,184 @@
+.hero {
+	position: relative;
+	@include adaptiveValue('padding-top', 308, 167, 1);
+	padding-bottom: 36px;
+	background: linear-gradient(
+			68.44deg,
+			rgba(0, 23, 36, 0.77) 16.41%,
+			rgba(0, 0, 0, 0) 50.39%
+		),
+		linear-gradient(
+			101.96deg,
+			rgba(1, 53, 83, 0.44) 2.6%,
+			rgba(0, 0, 0, 0) 94.37%
+		),
+		url('@img/hero-bg.jpg') center / cover no-repeat;
+	min-height: 100vh;
+
+	// .hero__container
+
+	&__container {
+	}
+
+	// .hero__body
+
+	&__body {
+		max-width: 650px;
+	}
+
+	// .hero__title
+
+	&__title {
+		@include adaptiveValue('font-size', 24, 16, 1);
+		line-height: math.div(29, 24);
+		color: #e0e0e0;
+	}
+
+	// .hero__subtitle
+
+	&__subtitle {
+		position: relative;
+		display: inline-flex;
+		margin-bottom: 20px;
+		font-weight: 700;
+		@include adaptiveValue('font-size', 65, 40, 1);
+		line-height: math.div(79, 65);
+		color: #e0e0e0;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 90%;
+			height: 3px;
+			bottom: -10px;
+			left: 0;
+			background-color: var(--color-accent);
+		}
+	}
+
+	// .hero__description
+
+	&__description {
+		margin-bottom: 26px;
+		font-weight: 600;
+		@include adaptiveValue('font-size', 18, 14, 1);
+		line-height: math.div(22, 18);
+		color: #e0e0e0;
+	}
+
+	// .hero__links
+
+	&__links {
+		display: flex;
+		align-items: center;
+		@include adaptiveValue('margin-bottom', 167, 62, 1);
+	}
+
+	// .hero__link
+
+	&__link {
+		max-width: 252px;
+		margin-right: 31px;
+		@media (max-width: $mobile) {
+			margin-right: 25px;
+		}
+	}
+
+	// .hero__button
+
+	&__button {
+		display: inline-flex;
+		align-items: center;
+		gap: 15px;
+		padding: 0 10px;
+		font-weight: 600;
+		color: #ffffff;
+		transition: all 0.3s ease 0s;
+		svg {
+			width: 36px;
+			height: 18px;
+			fill: #fff;
+			transition: all 0.3s ease 0s;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--color-accent);
+				svg {
+					fill: var(--color-accent);
+				}
+			}
+		}
+	}
+
+	// .hero__contacts
+
+	&__contacts {
+	}
+}
+
+.contacts-list {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	row-gap: 5px;
+	column-gap: 23px;
+	@media (max-width: $mobile) {
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 10px;
+	}
+
+	// .contacts-list__column
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&:first-child {
+			.contacts-list__item {
+				@media (any-hover: hover) {
+					&:hover {
+						a {
+							color: var(--color-accent);
+						}
+						svg {
+							fill: var(--color-accent);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// .contacts-list__item
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		font-weight: 600;
+		@include adaptiveValue('font-size', 18, 14, 1);
+		line-height: math.div(22, 18);
+		color: #ececec;
+
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: #ececec;
+			transition: all 0.3s ease 0s;
+
+			@media (max-width: $mobileSmall) {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		address {
+			font-style: normal;
+		}
+	}
+
+	// .contacts-list__link
+
+	&__link {
+		transition: all 0.3s ease 0s;
+	}
+}

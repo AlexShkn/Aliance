@@ -1,0 +1,109 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s ease 0s;
+
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		min-height: 76px;
+		@media (max-width: $mobile) {
+			min-height: 61px;
+		}
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 12;
+		width: 137px;
+		margin-right: 40px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		// @media (max-width: $mobile) {
+		// 	position: absolute;
+		// 	left: 50%;
+		// 	top: 50%;
+		// 	transform: translate(-50%, -50%);
+		// }
+		@media (max-width: 1300px) {
+			margin-right: 65px;
+		}
+		@media (max-width: $mobile) {
+			margin-right: 34px;
+			width: 85px;
+		}
+
+		@media (max-width: $mobileSmall) {
+			margin-right: 20px;
+		}
+	}
+
+	&__menu {
+		margin-right: 54px;
+	}
+
+	// .header__contacts
+
+	&__contacts {
+	}
+}
+
+.header-contacts {
+	display: flex;
+	gap: 32px;
+	@media (max-width: $mobile) {
+		flex-direction: column;
+		gap: 10px;
+	}
+	// .header-contacts__item
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		gap: 5px;
+
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: #e0e0e0;
+			transition: all 0.3s ease 0s;
+
+			@media (max-width: $mobile) {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				a {
+					color: var(--color-accent);
+				}
+				svg {
+					fill: var(--color-accent);
+				}
+			}
+		}
+	}
+
+	// .header-contacts__link
+
+	&__link {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: math.div(20, 16);
+		color: #e0e0e0;
+		transition: all 0.3s ease 0s;
+		@media (max-width: $mobile) {
+			font-size: 12.5px;
+		}
+	}
+}

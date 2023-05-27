@@ -1,0 +1,26 @@
+<svg width="0" height="0" class="hidden">
+
+ <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 10" id="check">
+    <path d="M13 1L4.75 9 1 5.364"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" id="double-arrow-up">
+    <path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 329.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18" id="loading.gif">
+    <defs>
+      <path id="avzva" d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z"></path>
+    </defs>
+    <g>
+      <g transform="translate(-674 -144)">
+        <use fill="#fff" xlink:href="#avzva"></use>
+      </g>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 13px 24px" id="close">
+    <path fill-rule="evenodd" fill="#fff" d="M1.453,12.000 L12.988,23.284 L12.267,23.989 L0.732,12.705 L0.011,12.000 L0.732,11.295 L12.267,0.010 L12.988,0.715 L1.453,12.000 Z"></path>
+  </symbol>
+  <symbol fill="#fff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 14px 25px" id="p-left">
+    <path fill-rule="evenodd" fill="#fff" d="M12.107,12.500 L0.793,1.186 L1.500,0.479 L12.814,11.793 L13.521,12.500 L12.814,13.207 L1.500,24.521 L0.793,23.814 L12.107,12.500 Z"></path>
+  </symbol>
+</svg>

@@ -1,0 +1,33 @@
+<div data-modal-callback data-modal class="modal-callback modal fade">
+	<div class="modal-callback__dialog modal__dialog">
+		<div data-modal-content class="modal-callback__content modal__content">
+			<a data-modal-close href="#" class="modal__close">
+				<svg class="icon">
+					<use xlink:href="@img/default-sprite.svg#close">
+					</use>
+				</svg>
+			</a>
+			<h3 class="modal-callback__title modal__title">Заказать расчет</h3>
+			<form class="modal-callback__form modal-callback-form modal-form">
+				<label class="callback-form__field">
+					<input type="text" name="name" class="callback-form__input modal-form__input" placeholder="Ваше имя">
+				</label>
+				<label class="callback-form__field">
+					<input autocomplete="off" type="tel" name="phone" data-value="Телефон"
+						class="callback-form__input modal-form__input" placeholder="Номер телефона">
+				</label>
+				<label class="callback-form__field">
+					<input type="email" name="email" class="callback-form__input modal-form__input" placeholder="E-mail">
+				</label>
+				<label class="checkbox callback-form__checkbox">
+					<input data-error="Ошибка" class="checkbox__input" type="checkbox">
+					<span class="checkbox__text callback-form__checkbox-text">
+						<span>Я согласен(на) на обработку<a href="#">персональных данных</a>
+						</span>
+					</span>
+				</label>
+				<button data-btn-close type="submit" class="callback-form__button modal-form__button">Заказать расчет</button>
+			</form>
+		</div>
+	</div>
+</div>

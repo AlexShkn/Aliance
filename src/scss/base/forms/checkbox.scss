@@ -1,0 +1,115 @@
+// <label class="checkbox">
+// 	<input class="calculator__input" type="checkbox" name="works" value="Анализ и автоматизация бизнес процессов" />
+// 	<div class="checkbox__checkmark">
+// 		<svg class="icon">
+// 			<use xlink:href="@img/icons/default-sprite.svg#check"></use>
+// 		</svg>
+// 	</div>
+// 	<div class="checkbox__body">Анализ и автоматизация бизнес процессов</div>
+// </label>
+
+.checkbox {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	padding: rem(4) 0 rem(4) rem(30);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkbox input:checked ~ .checkbox__checkmark {
+	background-color: var(--color-accent);
+	border-color: var(--color-accent);
+}
+.filter-details .checkbox input:checked ~ .checkbox__checkmark {
+	background-color: transparent;
+	border-color: rgba(0, 0, 0, 0.6);
+}
+
+.checkbox input:checked ~ .checkbox__checkmark svg {
+	opacity: 1;
+}
+// .checkbox:hover input ~ .checkbox__checkmark {
+// 	background-color: var(--color-accent);
+// }
+.checkbox:hover input:checked ~ .checkbox__checkmark {
+	background-color: var(--color-accent);
+}
+.filter-details .checkbox:hover input:checked ~ .checkbox__checkmark {
+	background-color: transparent;
+}
+
+.checkbox .checkbox__checkmark {
+	position: absolute;
+	left: 0;
+	height: 24px;
+	width: 24px;
+	background-color: #fff;
+	border: 2px solid rgba(0, 0, 0, 0.6);
+	transition: background-color 0.25s ease;
+	border-radius: 4px;
+	@media (max-width: $mobileSmall) {
+		width: 21px;
+		height: 23px;
+	}
+}
+.filter-details .checkbox .checkbox__checkmark {
+	top: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	height: 20px;
+	width: 20px;
+}
+
+.checkbox .checkbox__checkmark svg {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 12px;
+	height: 12px;
+	opacity: 0;
+	transition: opacity 0.25s ease;
+	stroke: #6d6c6c;
+	@media (max-width: rem(1440)) {
+		height: rem(10);
+		width: rem(10);
+	}
+}
+.filter-details .checkbox__checkmark svg {
+	stroke: var(--color-accent);
+}
+
+.callback .checkbox .checkbox__body {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: math.div(24, 14);
+	letter-spacing: -0.015em;
+	color: #c2c2c2;
+
+	@media (max-width: $mobile) {
+		color: #fff;
+	}
+}
+.filter-details .checkbox .checkbox__body {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: math.div(20, 16);
+	color: #3d3d3d;
+}
+
+.checkbox._error {
+	.checkbox__checkmark {
+		border: 1px solid #ee1212;
+	}
+}

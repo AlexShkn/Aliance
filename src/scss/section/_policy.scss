@@ -1,0 +1,28 @@
+.policy {
+	@include adaptiveValue('padding-top', 130, 100, 1);
+	@include adaptiveValue('padding-bottom', 110, 60, 1);
+	// .policy__container
+
+	&__container {
+	}
+
+	// .policy__title
+
+	&__title {
+		margin-bottom: 25px;
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 23px;
+		color: #ffffff;
+	}
+
+	// .policy__text
+
+	&__text {
+		font-family: 'Roboto';
+		font-size: 14px;
+		line-height: math.div(16, 14);
+		color: #ffffff;
+	}
+}

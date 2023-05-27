@@ -1,0 +1,40 @@
+//Scroll bar====================================================================================================
+
+/* Для WebKit-браузеров (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #cfcfcf;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1f50fe;
+}
+
+/* Для Firefox */
+::-moz-scrollbar {
+	width: 8px;
+}
+
+::-moz-scrollbar-track {
+	background: #cfcfcf;
+}
+
+::-moz-scrollbar-thumb {
+	background: #1f50fe;
+}
+
+/* Для Internet Explorer и Edge */
+::-ms-scrollbar {
+	width: 8px;
+}
+
+::-ms-scrollbar-track {
+	background: #cfcfcf;
+}
+
+::-ms-scrollbar-thumb {
+	background: #1f50fe;
+}

@@ -1,0 +1,709 @@
+[
+	{
+		"id": 1001,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 1200000,
+		"houseArea": 220,
+		"plotArea": 10,
+		"repairType": "Евро",
+		"objectType": "Дом",
+		"landСategory": "Индивидуальное жилищное строительство",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1002,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/yjxpulayzhzfeq55pylo9wwbzhpj.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 3100000,
+		"houseArea": 100,
+		"plotArea": 5,
+		"repairType": "Косметический",
+		"objectType": "Дача",
+		"landСategory": "Садовое некоммерческое товарищество",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1003,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 2800000,
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Дирзайнерский",
+		"objectType": "Коттедж",
+		"landСategory": "Дачное некоммерческое партнерство",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1004,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/g3syu7ayt52u-nwyomnbkhzwt5s4.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 1200000,
+
+		"houseArea": 120,
+		"plotArea": 7,
+		"repairType": "Требуется",
+		"objectType": "Таунхаус",
+		"landСategory": "Фермерское хозяйство",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1005,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 10000000,
+
+		"houseArea": 250,
+		"plotArea": 15,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1006,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 7000000,
+
+		"houseArea": 400,
+		"plotArea": 15,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1007,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/qxdrlayuezr7zppqyf0bjjnuep9.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 1000000,
+
+		"houseArea": 230,
+		"plotArea": 6,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1008,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 2000000,
+
+		"houseArea": 245,
+		"plotArea": 12,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1009,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/z-ygwrayywww8wkaxg8cggp5ywmm.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4000000,
+
+		"houseArea": 500,
+		"plotArea": 20,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1010,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/19pxqlayeznh6bk2dvo38a7jezx3.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/umvllayvgozhzqpv1-zynapvgyp.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/usfo27ayfc74ctflsmnzddd4fchu.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/4_woclaytxye2y0z4n-d3lhttxoi.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hwihqrayk-gx6-nkhvdni37hk-cn.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/umvllayvgozhzqpv1-zynapvgyp.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/p9pxvraykznhf1e2jdjc8a4dkzx3.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/6afo5rayru74t4dlkjmkjddfruhu.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/lwqhkrayo-oxo_nmg-j0ivgxo-ub.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hphvybaykbjjyood0s_n2izckb51.jpeg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 6000000,
+
+		"houseArea": 100,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1011,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/04/q5jg9lay73hwxs10zm0xhd9x73dmve0.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/g4fshlayl27kte1r2cblkts_l2hy.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/yrkqkbayzlumoaxe2iwpphyyzl0w.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/ksahmbayhc-xmefk2q1imggshckn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/fly6nbayuf8mnhpahj1fonywufma.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/oclt-7aylmvlulbor_tzndvylm1z.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/o48hl7ayl2yxhlvjfutwmegml2cn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/flo6nbayufmmnhpwhjffrnywufwa.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hcffurayss7ze3mr89zw0smzsshl.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/js4iwlayiicuaeaimsbf2mrjiigc.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/5y39jbays8tljinbv4asoxsus8jd.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/eln_xrayvfpjb35fu8zbpzllvfzf.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/a4qtt7ayr2ol5m1mmsctnnxsr2uz.jpg"
+		],
+
+		"title": "1-к. квартира, 36 м², 2/3 эт., 36м2, 2 из 3",
+		"description": "Продаю 1-комнатную квартиру в ЖК Царёво, п. Новое Шигалеево, Пестречинский район. Один взрослый собственник. Документы готовы для выхода на сделку.",
+		"options": [
+			"В квартире сделан качественный ремонт. Делали для себя. В квартире светло и красиво!",
+			"Комнаты: 17м.кв, просторная кухня 11м.кв",
+			"Планировка: кухня, комната, прихожая, балкон, санузел",
+			"Квартира тёплая. Коммунальные платежи минимальны.",
+			"Вся мебель и техника остаётся новому хозяину в подарок!",
+			"Есть большой балкон",
+			"Квартира находится в доме высокого качества постройки. (Дома с двускатной, а не плоской крышей Они отличаются от более новых построек.) На втором этаже!!",
+			"Рядом лес и красивая природа.",
+			"Школа, детсадики и все магазины в шаговой доступности."
+		],
+		"address": "г. Казань, д. Изумрудная п. Новые Салмачи, ул. Куюки.",
+		"price": 8500000,
+		"discount": 7500000,
+
+		"houseArea": 180,
+		"plotArea": 9,
+		"repairType": "Косметический",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1012,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 250,
+		"plotArea": 10,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1013,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/yjxpulayzhzfeq55pylo9wwbzhpj.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 300,
+		"plotArea": 17,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1014,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1015,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/g3syu7ayt52u-nwyomnbkhzwt5s4.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 420,
+		"plotArea": 7,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1016,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 330,
+		"plotArea": 14,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1017,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1018,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/qxdrlayuezr7zppqyf0bjjnuep9.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1019,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/nxngdlaym_pw3vn_agwzcifxm_za.jpg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 700,
+		"plotArea": 20,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1020,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/z-ygwrayywww8wkaxg8cggp5ywmm.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/doble7ay2ml90hhsk05_m6zy2m_r.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/abte-bayrp3yug74yikjdynarptk.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/k1jb3layh7ttduw-abqisbx_h737.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/y2f73layz47ndq2lsyfnfbx_z4hb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/absh-bayxp2xuab4_dhtd0zaxpsb.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/perh1raykk1xf1kom_y5x6b1kkvn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/wq8-k7aybeyigq_jmfiooraibece.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/zk_xh7ayyebhlqjd5fslmnkkyebr.jpg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1021,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/05/19pxqlayeznh6bk2dvo38a7jezx3.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/umvllayvgozhzqpv1-zynapvgyp.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/usfo27ayfc74ctflsmnzddd4fchu.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/4_woclaytxye2y0z4n-d3lhttxoi.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hwihqrayk-gx6-nkhvdni37hk-cn.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/umvllayvgozhzqpv1-zynapvgyp.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/p9pxvraykznhf1e2jdjc8a4dkzx3.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/6afo5rayru74t4dlkjmkjddfruhu.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/lwqhkrayo-oxo_nmg-j0ivgxo-ub.jpeg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hphvybaykbjjyood0s_n2izckb51.jpeg"
+		],
+		"title": "Коттедж 140 м² на участке 5 сот., м2, 2",
+		"options": [
+			"Чистовая Отделка",
+			"Широкие дороги(асфальт)",
+			"1 ЭТАЖ: ВХОДНАЯ ГРУППА, ЗАЛ КУХНЯ, 3- КОМНАТЫ, САНУЗЕЛ,САУНА",
+			"ВЫХОД НА ЗАДНИЙ ДВОР"
+		],
+		"address": "г. Казань, д. Куюки п. Новые Салмачи, ул. Изумрудная.",
+		"price": 5500000,
+		"discount": 4900000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Евро",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	},
+	{
+		"id": 1022,
+		"preview": "https://alliance-house.ru/wp-content/uploads/2021/04/q5jg9lay73hwxs10zm0xhd9x73dmve0.jpeg",
+		"images": [
+			"https://alliance-house.ru/wp-content/uploads/2021/05/g4fshlayl27kte1r2cblkts_l2hy.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/yrkqkbayzlumoaxe2iwpphyyzl0w.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/ksahmbayhc-xmefk2q1imggshckn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/fly6nbayuf8mnhpahj1fonywufma.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/oclt-7aylmvlulbor_tzndvylm1z.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/o48hl7ayl2yxhlvjfutwmegml2cn.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/flo6nbayufmmnhpwhjffrnywufwa.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/hcffurayss7ze3mr89zw0smzsshl.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/js4iwlayiicuaeaimsbf2mrjiigc.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/5y39jbays8tljinbv4asoxsus8jd.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/eln_xrayvfpjb35fu8zbpzllvfzf.jpg",
+			"https://alliance-house.ru/wp-content/uploads/2021/05/a4qtt7ayr2ol5m1mmsctnnxsr2uz.jpg"
+		],
+
+		"title": "1-к. квартира, 36 м², 2/3 эт., 36м2, 2 из 3",
+		"description": "Продаю 1-комнатную квартиру в ЖК Царёво, п. Новое Шигалеево, Пестречинский район. Один взрослый собственник. Документы готовы для выхода на сделку.",
+		"options": [
+			"В квартире сделан качественный ремонт. Делали для себя. В квартире светло и красиво!",
+			"Комнаты: 17м.кв, просторная кухня 11м.кв",
+			"Планировка: кухня, комната, прихожая, балкон, санузел",
+			"Квартира тёплая. Коммунальные платежи минимальны.",
+			"Вся мебель и техника остаётся новому хозяину в подарок!",
+			"Есть большой балкон",
+			"Квартира находится в доме высокого качества постройки. (Дома с двускатной, а не плоской крышей Они отличаются от более новых построек.) На втором этаже!!",
+			"Рядом лес и красивая природа.",
+			"Школа, детсадики и все магазины в шаговой доступности."
+		],
+		"address": "г. Казань, д. Изумрудная п. Новые Салмачи, ул. Куюки.",
+		"price": 8500000,
+		"discount": 7500000,
+
+		"houseArea": 150,
+		"plotArea": 5,
+		"repairType": "Косметический",
+		"objectType": "Коттедж",
+		"communications": ["Газ", "Электричество"],
+		"paymentMethods": ["ИПОТЕКА", "МАТЕРИНСКИЙ КАПИТАЛ", "ОБМЕН"]
+	}
+]
