@@ -60,3 +60,7 @@ if (locateName === 'services') {
 }
 
 //====================================================================
+const headerLinks = document.querySelectorAll('.menu__link')
+headerLinks.forEach(link => {
+	if (link.dataset['locate'] === locateName) link.classList.add('_active')
+})

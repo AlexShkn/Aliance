@@ -85,6 +85,7 @@
 		white-space: nowrap;
 
 		&._active {
+			color: var(--color-accent);
 		}
 		@media (any-hover: hover) {
 			&:hover {

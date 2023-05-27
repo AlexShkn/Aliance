@@ -126,6 +126,40 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		},
 	})
+
+	const cardSlider = new Swiper('.object-card-slider', {
+		spaceBetween: 10,
+		slidesPerView: 1,
+
+		navigation: {
+			nextEl: '.object-card-slider__next',
+			prevEl: '.object-card-slider__prev',
+		},
+		loop: true,
+		loopedSlides: 4,
+	})
+	const cardThumbsSlider = new Swiper('.object-card-slider-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		touchRatio: 0.2,
+		slideToClickedSlide: true,
+		loop: true,
+		loopedSlides: 4,
+
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+
+			480: {
+				slidesPerView: 4,
+				spaceBetween: 10,
+			},
+		},
+	})
+	cardSlider.controller.control = cardThumbsSlider
+	cardThumbsSlider.controller.control = cardSlider
 })
 
 //====================================================================

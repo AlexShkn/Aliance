@@ -55,20 +55,33 @@
 		box-shadow: 0 10px 35px #000;
 		user-select: none;
 	}
+
+	// .lightbox__wrapper
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin: 0px auto;
+	}
+
+	// .lightbox__buttons
+
+	&__buttons {
+		position: absolute;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
 
 .lightbox-arrow {
-	position: fixed;
-	// display: inline-block;
-	top: 50%;
-	text-align: center;
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 }
 .lightbox-arrow-left {
-	left: 10px;
 	transform: rotate(-180deg);
 }
 lightbox-arrow-right {
-	right: 10px;
 }

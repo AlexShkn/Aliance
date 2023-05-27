@@ -79,7 +79,7 @@ import './components/sliders/swiper/slider.js'
 //====================================================================
 //Custom LightBox
 // для img - data-lightbox-image
-// import './components/customLightbox.js'
+import './components/customLightbox.js'
 //--------------------------------------------------------------------
 //LightBox
 // data-fslightbox="gallery" href="img/3.jpg"
