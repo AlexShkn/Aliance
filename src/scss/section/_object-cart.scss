@@ -493,6 +493,7 @@
 	// .object-card-slider__btn
 
 	&__btn {
+		position: relative;
 		cursor: pointer;
 		svg {
 			width: 40px;

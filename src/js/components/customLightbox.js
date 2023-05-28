@@ -7,6 +7,7 @@ const arrRight = document.querySelector('.lightbox-arrow-right')
 let imgIndex = 0
 
 if (window.innerWidth > 768 && lightbox) {
+	console.log('init')
 	images.forEach(img => {
 		img.addEventListener('click', e => {
 			mainImg.src = e.target.src

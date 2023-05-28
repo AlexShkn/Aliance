@@ -48,15 +48,20 @@ if (items.length) {
 	})
 }
 
-// Pagination
+// Filter
 
 const baseUrl = 'https://646cb9f87b42c06c3b2be40a.mockapi.io'
 
 const catalogList = document.querySelector('.catalog__list')
 const objectCardPage = document.querySelector('.object-card')
 const paginationList = document.querySelector('.catalog-pagination__list')
-const paginationPrev = document.querySelector('.catalog-pagination__prev')
-const paginationNext = document.querySelector('.catalog-pagination__next')
+const paginationBack = document.querySelector('.catalog-pagination__start')
+const paginationPrev = document.querySelector(
+	'.catalog-pagination__arrow--prev',
+)
+const paginationNext = document.querySelector(
+	'.catalog-pagination__arrow--next',
+)
 const paginationMore = document.querySelector('.catalog-pagination__more')
 const catalogCount = document.querySelector('.catalog__count > span')
 const sortValue = document.querySelector('.sort-dropdown__value')
@@ -65,7 +70,8 @@ const sortTypes = document.querySelectorAll('.sort-dropdown__item')
 const btnReset = document.querySelector('.filter-bar__reset')
 const detailsInputs = document.querySelectorAll('.filter-details__input')
 const filterButton = document.querySelector('.filter-bar__button')
-const filterButtonCount = document.querySelector('.filter-bar__button > span')
+const filterButtonCount = document.querySelector('#filter-count')
+const filterButtonState = document.querySelector('#filter-state')
 const filterSquareInputs = document.querySelectorAll('.filter-square__input')
 
 const range = document.getElementById('range')
@@ -75,27 +81,28 @@ const inputMax = document.getElementById('max')
 //--------------------------------------------------------------------
 let dataBase = []
 
-const maxItemsForPage = 4
+let maxItemsForPage = 4
 let perPage = maxItemsForPage
 let currentPage = 1
 let startItem = 0
 let endItem = perPage
 let totalPages
 let sortType = ''
+let dataIsLoading = false
 
 const filterOptions = {
 	prices: {
-		min: '1000000',
-		max: '20000000',
+		min: 1000000,
+		max: 20000000,
 	},
 	area: {
 		house: {
-			min: '0',
-			max: '100000',
+			min: 0,
+			max: 100000,
 		},
 		plot: {
-			min: '0',
-			max: '100000',
+			min: 0,
+			max: 100000,
 		},
 	},
 	objectType: [],
@@ -105,6 +112,8 @@ const filterOptions = {
 	landСategory: [],
 }
 
+let filterState = JSON.parse(JSON.stringify(filterOptions))
+
 const slider = document.querySelector('.object-card-slider__wrapper')
 const sliderThumbs = document.querySelector(
 	'.object-card-slider-thumbs__wrapper',
@@ -113,48 +122,22 @@ const sliderThumbs = document.querySelector(
 if (objectCardPage) {
 	const currentCard = JSON.parse(localStorage.getItem('objectCard'))
 	renderObjectCardPage(currentCard)
-	console.log(currentCard)
 }
 
 function renderObjectCardPage(currentCard) {
-	const {
-		preview,
-		images,
-		options,
-		address,
-		price,
-		discount,
-		houseArea,
-		plotArea,
-		repairType,
-		objectType,
-		communications,
-		paymentMethods,
-	} = currentCard
+	const { preview, images } = currentCard
 
 	renderObjectCardGallery([preview, ...images])
-	renderObjectCardTitle(objectType, houseArea, plotArea)
-	renderObjectCardSpecification(
-		houseArea,
-		plotArea,
-		repairType,
-		objectType,
-		communications,
-	)
-	renderObjectCardDescription(
-		objectType,
-		address,
-		houseArea,
-		plotArea,
-		options,
-		paymentMethods,
-	)
+	renderObjectCardTitle(currentCard)
+	renderObjectCardSpecification(currentCard)
+	renderObjectCardDescription(currentCard)
 
-	document.title = `${objectType} ${houseArea} м² / ${plotArea} сот.`
+	document.title = `${currentCard.objectType} ${currentCard.houseArea} м² / ${currentCard.plotArea} сот.`
 	document.querySelector('[data-price-discount] > span').textContent =
-		getDigFormat(discount)
-	document.querySelector('[data-price] > span').textContent =
-		getDigFormat(price)
+		getDigFormat(currentCard.discount)
+	document.querySelector('[data-price] > span').textContent = getDigFormat(
+		currentCard.price,
+	)
 }
 
 function renderObjectCardGallery(gallery) {
@@ -178,13 +161,7 @@ function renderObjectCardGallery(gallery) {
 	})
 }
 
-function renderObjectCardSpecification(
-	houseArea,
-	plotArea,
-	repairType,
-	objectType,
-	communications,
-) {
+function renderObjectCardSpecification(obj) {
 	document
 		.querySelector('.object-card-specifications__description-rows')
 		.insertAdjacentHTML(
@@ -193,66 +170,59 @@ function renderObjectCardSpecification(
 				<li class="object-card-specifications__row">
 					<span class="object-card-specifications__name">Площадь дома</span>
 					<div class="object-card-specifications__dotted"></div>
-					<span data-house-area class="object-card-specifications__meaning">${houseArea} м²</span>
+					<span data-house-area class="object-card-specifications__meaning">${obj.houseArea} м²</span>
 				</li>
 				<li class="object-card-specifications__row">
 					<span class="object-card-specifications__name">Площадь участка</span>
 					<div class="object-card-specifications__dotted"></div>
-					<span data-plot-area class="object-card-specifications__meaning">${plotArea} сот</span>
+					<span data-plot-area class="object-card-specifications__meaning">${obj.plotArea} сот</span>
 				</li>
 				<li class="object-card-specifications__row">
 					<span class="object-card-specifications__name">Ремонт</span>
 					<div class="object-card-specifications__dotted"></div>
-					<span data-repair-type class="object-card-specifications__meaning">${repairType}</span>
+					<span data-repair-type class="object-card-specifications__meaning">${obj.repairType}</span>
 				</li>
 				<li class="object-card-specifications__row">
 					<span class="object-card-specifications__name">Вид объекта</span>
 					<div class="object-card-specifications__dotted"></div>
-					<span data-object-type class="object-card-specifications__meaning">${objectType}</span>
+					<span data-object-type class="object-card-specifications__meaning">${obj.objectType}</span>
 				</li>
 				<li class="object-card-specifications__row">
 					<span class="object-card-specifications__name">Коммуникации</span>
 					<div class="object-card-specifications__dotted"></div>
-					<span data-communications class="object-card-specifications__meaning">${communications}</span>
+					<span data-communications class="object-card-specifications__meaning">${obj.communications}</span>
 				</li>`,
 		)
 }
 
-function renderObjectCardTitle(objectType, houseArea, plotArea) {
+function renderObjectCardTitle(obj) {
 	document
 		.querySelector('.object-card-specifications__title')
 		.insertAdjacentHTML(
 			'beforeend',
 			`
-		<p>${objectType} ${houseArea} м²</p>
-		<p>на участке ${plotArea} сот., м2, 2</p>
+		<p>${obj.objectType} ${obj.houseArea} м²</p>
+		<p>на участке ${obj.plotArea} сот., м2, 2</p>
 	`,
 		)
 
 	document.querySelector(
 		'[data-card-title]',
-	).textContent = `${objectType} ${houseArea} м² на участке ${plotArea} сот., м2, 2`
+	).textContent = `${obj.objectType} ${obj.houseArea} м² на участке ${obj.plotArea} сот., м2, 2`
 }
 
-function renderObjectCardDescription(
-	objectType,
-	address,
-	houseArea,
-	plotArea,
-	options,
-	paymentMethods,
-) {
+function renderObjectCardDescription(obj) {
 	document.querySelector('.object-card-description').insertAdjacentHTML(
 		'beforeend',
 		`
 			<div class="object-card-description__text-block">
 					<h3 class="object-card-description__title">Описание:</h3>
-					<h4 class="object-card-description__subtitle">Продается ${objectType}.</h4>
-					<address class="object-card-description__address">${address}</address>
+					<h4 class="object-card-description__subtitle">Продается ${obj.objectType}.</h4>
+					<address class="object-card-description__address">${obj.address}</address>
 				</div>
 
 				<div class="object-card-description__text-block">
-					<h4 class="object-card-description__subtitle"><span>ОБЩАЯ ПЛОЩАДЬ</span> ${houseArea} кв. м УЧАСТОК ${plotArea} соток.</h4>
+					<h4 class="object-card-description__subtitle"><span>ОБЩАЯ ПЛОЩАДЬ</span> ${obj.houseArea} кв. м УЧАСТОК ${obj.plotArea} соток.</h4>
 					<ul data-option-list class="object-card-description__list"></ul>
 				</div>
 				<div class="object-card-description__text-block">
@@ -268,7 +238,7 @@ function renderObjectCardDescription(
 	`,
 	)
 
-	options.forEach(option => {
+	obj.options.forEach(option => {
 		document
 			.querySelector('[data-option-list]')
 			.insertAdjacentHTML(
@@ -276,7 +246,7 @@ function renderObjectCardDescription(
 				`<li class="object-card-description__item">${option}.</li>`,
 			)
 	})
-	paymentMethods.forEach(method => {
+	obj.paymentMethods.forEach(method => {
 		document
 			.querySelector('[data-payment-list]')
 			.insertAdjacentHTML(
@@ -287,13 +257,28 @@ function renderObjectCardDescription(
 }
 
 if (paginationList) {
-	rangeSliderInit()
+	noUiSlider.create(range, {
+		start: [1_000_000, 20_000_000],
+		connect: true,
+		range: {
+			min: 1_000_000,
+			max: 20_000_000,
+		},
+		step: 100_000,
+	})
+
+	rangeSliderInit(range)
+	console.log(dataIsLoading)
+
 	fetchData()
 
 	catalogList.addEventListener('click', e => {
 		if (e.target.classList.contains('catalog-card__link')) {
 			const card = e.target.closest('.catalog__item')
 			const currentItem = dataBase.find(obj => obj.id === parseInt(card.id))
+			if (localStorage.getItem('objectCard') !== null) {
+				localStorage.removeItem('objectCard')
+			}
 			localStorage.setItem('objectCard', JSON.stringify(currentItem))
 		}
 	})
@@ -314,43 +299,49 @@ if (paginationList) {
 			removeUnCheckedInputs(input)
 			changeFilterCheckboxState(input)
 			fetchData(true)
+			filterStateCheck()
 		})
 	})
 
 	filterSquareInputs.forEach(input => {
 		input.addEventListener('input', () => {
 			checkingInput(input)
-			if (input.dataset.houseMin === '') {
-				filterOptions.area.house.min = input.value
-				if (input.value === '') filterOptions.area.house.min = '0'
+			const type = input.dataset['area'].slice(0, -3).toLowerCase()
+			const minMax = input.dataset['area'].slice(-3).toLowerCase()
+
+			filterOptions.area[type][minMax] = input.value
+
+			if (!input.value) {
+				if (minMax === 'min') filterOptions.area[type].min = '0'
+				if (minMax === 'max') filterOptions.area[type].max = '100000'
 			}
-			if (input.dataset.houseMax === '') {
-				filterOptions.area.house.max = input.value
-				if (input.value === '') filterOptions.area.house.max = '100000'
-			}
-			if (input.dataset.plotMin === '') {
-				filterOptions.area.plot.min = input.value
-				if (input.value === '') filterOptions.area.plot.min = '0'
-			}
-			if (input.dataset.plotMax === '') {
-				filterOptions.area.plot.max = input.value
-				if (input.value === '') filterOptions.area.plot.max = '100000'
-			}
-		}),
-			input.addEventListener('change', () => {
-				fetchData(true)
-			})
+
+			fetchData(true)
+			filterStateCheck()
+		})
 	})
 
 	btnReset.addEventListener('click', () => {
-		filterFormReset()
+		filterFormReset(range)
 		fetchData()
 	})
 
 	filterButton.addEventListener('click', () => {
+		if (filterState !== JSON.stringify(filterOptions)) {
+			currentPage = 1
+			startItem = 0
+			endItem = maxItemsForPage
+			filterStateChange()
+			fetchData()
+			goToTopElem()
+		}
+	})
+
+	paginationBack.addEventListener('click', () => {
 		currentPage = 1
 		startItem = 0
 		endItem = maxItemsForPage
+		goToTopElem()
 		fetchData()
 	})
 
@@ -366,7 +357,7 @@ if (paginationList) {
 				) {
 					startItem = (currentPage - 1) * perPage
 					endItem = currentPage * perPage
-
+					goToTopElem()
 					fetchData()
 
 					pages.forEach(page => {
@@ -376,13 +367,8 @@ if (paginationList) {
 				}
 			}
 		})
-
 		paginationArrowState()
 	})
-
-	if (currentPage === 1) {
-		paginationPrev.classList.add('disabled')
-	}
 
 	paginationPrev.addEventListener('click', () => {
 		if (currentPage > 1) {
@@ -394,6 +380,7 @@ if (paginationList) {
 			fetchData()
 		}
 		paginationArrowState()
+		goToTopElem()
 	})
 	paginationNext.addEventListener('click', () => {
 		if (currentPage !== totalPages) {
@@ -405,6 +392,7 @@ if (paginationList) {
 			fetchData()
 		}
 		paginationArrowState()
+		goToTopElem()
 	})
 }
 
@@ -415,9 +403,11 @@ async function fetchData(renderBlocking) {
 		if (!dataBase.length) {
 			const itemsResponse = await axios.get(`${baseUrl}/objects`)
 			dataBase = itemsResponse.data
+			dataIsLoading = true
 		}
 
 		filter(dataBase, renderBlocking)
+		paginationArrowState()
 	} catch (error) {
 		alert('Не удалось сделать запрос данных')
 	}
@@ -440,27 +430,27 @@ function filter(dataBase, renderBlocking) {
 			plotAreaMax > obj.plotArea
 		) {
 			if (objectType.length && !repairType.length && !landСategory.length) {
-				return objectType.some(type => type === obj.objectType)
+				return objectType.includes(obj.objectType)
 			} else if (
 				!objectType.length &&
 				repairType.length &&
 				!landСategory.length
 			) {
-				return repairType.some(type => type === obj.repairType)
+				return repairType.includes(obj.repairType)
 			} else if (
 				!objectType.length &&
 				!repairType.length &&
 				landСategory.length
 			) {
-				return landСategory.some(type => type === obj.landСategory)
+				return landСategory.includes(obj.landСategory)
 			} else if (
 				objectType.length &&
 				repairType.length &&
 				!landСategory.length
 			) {
 				return (
-					objectType.some(type => type === obj.objectType) &&
-					repairType.some(type => type === obj.repairType)
+					objectType.includes(obj.objectType) &&
+					repairType.includes(obj.repairType)
 				)
 			} else if (
 				!objectType.length &&
@@ -468,8 +458,8 @@ function filter(dataBase, renderBlocking) {
 				landСategory.length
 			) {
 				return (
-					repairType.some(type => type === obj.repairType) &&
-					landСategory.some(type => type === obj.landСategory)
+					repairType.includes(obj.repairType) &&
+					landСategory.includes(obj.landСategory)
 				)
 			} else if (
 				objectType.length &&
@@ -477,8 +467,8 @@ function filter(dataBase, renderBlocking) {
 				landСategory.length
 			) {
 				return (
-					objectType.some(type => type === obj.objectType) &&
-					landСategory.some(type => type === obj.landСategory)
+					objectType.includes(obj.objectType) &&
+					landСategory.includes(obj.landСategory)
 				)
 			} else if (
 				objectType.length &&
@@ -486,9 +476,9 @@ function filter(dataBase, renderBlocking) {
 				landСategory.length
 			) {
 				return (
-					objectType.some(type => type === obj.objectType) &&
-					repairType.some(type => type === obj.repairType) &&
-					landСategory.some(type => type === obj.landСategory)
+					objectType.includes(obj.objectType) &&
+					repairType.includes(obj.repairType) &&
+					landСategory.includes(obj.landСategory)
 				)
 			}
 			return true
@@ -498,68 +488,66 @@ function filter(dataBase, renderBlocking) {
 	const sortData = sortType.length ? changeSorting(resultData) : ''
 
 	totalPages = Math.ceil(resultData.length / perPage)
-	catalogCount.textContent = resultData.length
 	filterButtonCount.textContent = resultData.length
-
 	!renderBlocking ? renderResultPage(sortData || resultData) : ''
 }
 
 function renderResultPage(data) {
-	renderCard(data)
+	catalogCount.textContent = data.length
+	currentPage > 1
+		? paginationBack.classList.add('visible')
+		: paginationBack.classList.remove('visible')
+
+	paginationArrowState()
+	renderCards(data)
 	renderPagination(totalPages, currentPage)
 	changeVisibleMore(totalPages)
 }
 
-// <span class="count-number">
-// <span>${objectType}</span>
-// <span>${repairType}</span>
-// <span>${landСategory}</span>
-// <span>Дом: ${houseArea}</span>
-// <span>Участок: ${plotArea}</span>
-// </span>
+function goToTopElem() {
+	const scrollTarget = document.querySelector('.catalog__content')
+	const elementPosition = scrollTarget.getBoundingClientRect().top
+	const offsetPosition = elementPosition
 
-function renderCard(data) {
+	window.scrollBy({
+		top: offsetPosition,
+		behavior: 'smooth',
+	})
+}
+
+function renderCards(data) {
+	console.log('render')
 	catalogList.innerHTML = ''
+
 	data.forEach((item, index) => {
 		if (index >= startItem && index < endItem) {
-			const {
-				id,
-				preview,
-				options,
-				address,
-				price,
-				discount,
-				objectType,
-				repairType,
-				landСategory,
-				houseArea,
-				plotArea,
-			} = item
 			catalogList.insertAdjacentHTML(
 				'beforeend',
-				`<li id="${id}" class="catalog__item">
+				`<li id="${item.id}" class="catalog__item">
 	<article class="catalog__card catalog-card">
 		<div class="catalog-card__image">
-			<img src="${preview}" alt="">
+			<img src="${item.preview}" alt="">
 		</div>
 		<div class="catalog-card__text">
-			<h3 class="catalog-card__title">${objectType} ${houseArea} м² на участке ${plotArea} сот., м2, 2</h3>
+			<h3 class="catalog-card__title">${item.objectType} ${
+					item.houseArea
+				} м² на участке ${item.plotArea} сот., м2, 2</h3>
 			<div class="catalog-card__description">
 				<ul class="catalog-card__option-list"></ul>
 				<address class="catalog-card__address">
 					<svg class="icon">
 						<use xlink:href="img/sprite.svg#locate"></use>
 					</svg>
-					${address}
+					${item.address}
 				</address>
 			</div>
 			<div class="catalog-card__footer">
 				<ul class="catalog-card__prices">
 					<li class="catalog-card__price">
-					<span>${getDigFormat(price)}</span>₽
+					<span>${getDigFormat(item.price)}</span>₽
 					</li>
 					<li class="catalog-card__price">
-					<span>${getDigFormat(discount)}</span>₽
+					<span>${getDigFormat(item.discount)}</span>₽
 					</li>
 				</ul>
 				<a href="object-card.html" target="_blank" class="catalog-card__link">
@@ -575,16 +563,20 @@ function renderCard(data) {
 `,
 			)
 
-			const card = document.getElementById(id)
-			options.forEach(option => {
-				card
-					.querySelector('.catalog-card__option-list')
-					.insertAdjacentHTML(
-						'beforeend',
-						`<li class="catalog-card__item">${option}</li>`,
-					)
-			})
+			renderCardOptionList(item.id, item.options)
 		}
+	})
+}
+
+function renderCardOptionList(id, options) {
+	const card = document.getElementById(id)
+	options.forEach(option => {
+		card
+			.querySelector('.catalog-card__option-list')
+			.insertAdjacentHTML(
+				'beforeend',
+				`<li class="catalog-card__item">${option}</li>`,
+			)
 	})
 }
 
@@ -626,14 +618,6 @@ function paginationArrowState() {
 
 	if (currentPage === 1) {
 		paginationPrev.classList.add('disabled')
-	} else {
-		paginationPrev.classList.remove('disabled')
-	}
-
-	if (currentPage !== totalPages) {
-		if (paginationPrev.classList.contains('disabled')) {
-			paginationPrev.classList.remove('disabled')
-		}
 	}
 
 	if (currentPage === totalPages) {
@@ -641,26 +625,17 @@ function paginationArrowState() {
 	}
 }
 
-function rangeSliderInit() {
+function rangeSliderInit(range) {
 	if (!range || !inputMin || !inputMax) return
 
 	const inputs = [inputMin, inputMax]
-
-	noUiSlider.create(range, {
-		start: [1_000_000, 20_000_000],
-		connect: true,
-		range: {
-			min: 1_000_000,
-			max: 20_000_000,
-		},
-		step: 100_000,
-	})
 
 	range.noUiSlider.on('update', function (values, handle) {
 		inputs[handle].textContent = getDigFormat(parseFloat(values[handle]))
 		filterOptions.prices.min = parseInt(values[0])
 		filterOptions.prices.max = parseInt(values[1])
-		fetchData(true)
+		if (dataBase.length) fetchData(true)
+		if (dataIsLoading) filterStateCheck()
 	})
 
 	inputMin.addEventListener('change', function () {
@@ -698,7 +673,7 @@ function changeSorting(resultData) {
 	}
 }
 
-function filterFormReset() {
+function filterFormReset(range) {
 	currentPage = 1
 	startItem = 0
 	endItem = maxItemsForPage
@@ -721,10 +696,25 @@ function filterFormReset() {
 	document.querySelectorAll('.filter-square__input').forEach(input => {
 		input.value = ''
 	})
-
-	range.noUiSlider.set(['1 000 000', '20 000 000'])
+	range.noUiSlider.reset()
 	inputMin.textContent = '1 000 000'
 	inputMax.textContent = '20 000 000'
 	filterOptions.prices.min = '1000000'
 	filterOptions.prices.max = '20000000'
+	filterStateChange()
+	filterStateCheck()
+}
+
+function filterStateChange() {
+	filterState = JSON.stringify(filterOptions)
+}
+
+filterStateChange()
+
+function filterStateCheck() {
+	if (filterState === JSON.stringify(filterOptions)) {
+		filterButtonState.textContent = 'Показано'
+	} else if (filterState !== JSON.stringify(filterOptions)) {
+		filterButtonState.textContent = 'Показать'
+	}
 }
